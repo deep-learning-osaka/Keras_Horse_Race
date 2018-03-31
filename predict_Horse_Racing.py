@@ -1,11 +1,14 @@
 """
 推論を実行する
 """
+
+import keras
+
 def load_model(model):
     # 分類クラス数
     nb_classes = 10
     # 重みファイルパス
-    full_model_weights_path = [path to weights file]
+    full_model_weights_path = "./checkpoints/weights_epoch/003_valloss/16.118_valacc/0.000.hdf5"
 
     model = Sequential()
     model.add(Dense(512, activation='relu', input_shape=(72,)))
