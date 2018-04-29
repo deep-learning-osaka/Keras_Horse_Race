@@ -3,15 +3,13 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from time import sleep
 
-# ブラウザを開きます
-driver = webdriver.Chrome()
 
 # ブラウザを開く。
-driver = webdriver.Chrome()
+driver = webdriver.Chrome("./chromedriver")
 # Googleの検索TOP画面を開く。
 driver.get("https://www.google.co.jp/")
 # 検索語として「selenium」と入力し、Enterキーを押す。
-driver.find_element_by_id("lst-ib").send_keys("ポケモン")
+driver.find_element_by_id("lst-ib").send_keys("ポケモンセンターオンライン")
 driver.find_element_by_id("lst-ib").send_keys(Keys.ENTER)
 # タイトルに「Selenium - Web Browser Automation」と一致するリンクをクリックする。
 driver.find_element_by_link_text("ポケモンセンターオンライン").click()
