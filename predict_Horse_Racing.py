@@ -1,6 +1,10 @@
+# -*- coding: utf-8 -*-
+
+
 """
 推論を実行する
 """
+
 
 import keras
 
