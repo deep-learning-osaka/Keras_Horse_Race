@@ -6,7 +6,7 @@ from selenium.webdriver.common.keys import Keys
 from time import sleep
 
 # ブラウザを開きます
-driver = webdriver.Chrome("/usr/local/bin/chromedriver")
+driver = webdriver.Chrome("./chromedriver")
 # Googleの検索TOP画面を開く。
 driver.get("https://grp02.id.rakutßen.co.jp/rms/nid/loginfwd?__event=LOGIN&service_id=n58&return_url=%2Fbet%2F")
 
